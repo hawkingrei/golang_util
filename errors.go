@@ -17,6 +17,7 @@ type HTTPError interface {
 	// Status returns error's http status code.
 	Status() int
 }
+
 // Error represents a numeric error with optional meta. It can be used in middleware as a return result.
 type Error struct {
 	Code  int         `json:"-"`
